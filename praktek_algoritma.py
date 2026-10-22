@@ -1,0 +1,16 @@
+# input nilai mahasiswa
+tugas = int (input("Nilai Tugas :"))
+uts = int (input("Nilai UTS :"))
+uas = int (input("Nilai UAS :"))
+kehadiran = int (input("kehadiran :"))
+
+#proses
+nilai_akhir = (20/100 * tugas) + (30/100 * uts) + (50/100 * uas)
+print("nilai akhir :", nilai_akhir)
+
+if nilai_akhir >= 85 and kehadiran >= 90 and nilai_akhir % 2 == 0:
+    print("status : LULUS DENGAN PREDIKAT")
+elif nilai_akhir >=75 and kehadiran >= 80:
+    print("status : LULUS")
+else:
+    print("status : BELUM LULUS")
